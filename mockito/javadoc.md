@@ -246,15 +246,107 @@ public class ArticleManagerTest {
 	MockitoAnnotations.initMocks(testClass);
 ```
 
+可以使用内建的runner: [MockitoJUnitRunner](http://site.mockito.org/mockito/docs/current/org/mockito/runners/MockitoJUnitRunner.html) 或者 rule: [MockitoRule](http://site.mockito.org/mockito/docs/current/org/mockito/junit/MockitoRule.html).
 
+更多内容请看这里: [MockitoAnnotations](http://site.mockito.org/mockito/docs/current/org/mockito/MockitoAnnotations.html)
 
+## 10. 存根连续调用(游历器风格存根)
 
+有时我们需要为同一个方法调用返回不同值/异常的存根。典型使用场景是mock游历器。早期版本的mockito没有这个特性来改进单一模拟。例如，为了替代游历器可以使用Iterable或简单集合。那些可以提供存根的自然方式（例如，使用真实的集合）。在少量场景下存根连续调用是很有用的，如：
 
+```java
+when(mock.someMethod("some arg"))
+.thenThrow(new RuntimeException())
+.thenReturn("foo");
 
+//第一次调用：抛出运行时异常
+mock.someMethod("some arg");
 
+//第二次调用: 打印 "foo"
+System.out.println(mock.someMethod("some arg"));
 
+//任何连续调用: 还是打印 "foo" (最后的存根生效).
+System.out.println(mock.someMethod("some arg"));
+```
 
+可供选择的连续存根的更短版本：
 
+```java
+when(mock.someMethod("some arg"))
+.thenReturn("one", "two", "three");
+```
+
+## 11. 带回调的存根
+
+容许用一般的[Answer]接口做存根。
+
+还有另外一种有争议的特性，最初没有包含的mockito中。推荐简单用 thenReturn() 或者 thenThrow() 来做存根， 这足够用来测试/测试驱动任何干净而简单的代码。然而，如果你对使用一般Answer接口的存根有需要，这里是例子：
+
+```java
+when(mock.someMethod(anyString())).thenAnswer(new Answer() {
+ Object answer(InvocationOnMock invocation) {
+     Object[] args = invocation.getArguments();
+     Object mock = invocation.getMock();
+     return "called with arguments: " + args;
+ }
+});
+
+//下面会 "called with arguments: foo"
+System.out.println(mock.someMethod("foo"));
+```
+
+## 12. doReturn()|doThrow()| doAnswer()|doNothing()|doCallRealMethod() 方法家族
+
+存根void方法需要when(Object)之外的另一个方式，因为编译器不喜欢括号内的void方法......
+
+doThrow(Throwable...) 替代 stubVoid(Object) 方法来存根void. 主要原因是改善和doAnswer()方法的可读性和一致性。
+
+当想用异常来存根void方法时使用 doThrow():
+
+```java
+doThrow(new RuntimeException()).when(mockedList).clear();
+
+//下面会抛出 RuntimeException:
+mockedList.clear();
+```
+
+可以使用 doThrow(), doAnswer(), doNothing(), doReturn() 和 doCallRealMethod() 代替响应的使用when()的调用， 用于任何方法。下列情况是必须的：
+
+- 存根void方法
+- 在spy对象上存根方法 (看下面)
+- 多次存根相同方法, 在测试中间改变mock的行为
+
+如果喜欢可以用这些方法代替响应的 when()，用于所有存根调用。
+
+## 13. 监视(Spy)实际对象
+
+可以创建实际对象的间谍(spy)。当使用spy时，真实方法被调用(除非方法被存根)。
+
+只能小心而偶尔的使用spy，例如处理遗留代码。
+
+在真实对象上做spy可以和"部分模拟"的概念关联起来。在1.8版本之前， mockito spy不是真实的部分模拟。理由是我们觉得部分mock是代码异味。在某一时刻我们发现了部分模拟的合法使用场景（第三方接口，遗留代码的临时重构，完整的话题在[这里](http://monkeyisland.pl/2009/01/13/subclass-and-override-vs-partial-mocking-vs-refactoring).
+
+```java
+List list = new LinkedList();
+List spy = spy(list);
+
+//随意的存根某些方法
+when(spy.size()).thenReturn(100);
+
+//使用spy调用真实方法
+spy.add("one");
+spy.add("two");
+
+//打印 "one" - 列表中的第一个元素
+System.out.println(spy.get(0));
+
+//size() 方法是被存根了的 - 打印100
+System.out.println(spy.size());
+
+//随意验证
+verify(spy).add("one");
+verify(spy).add("two");
+```
 
 
 
