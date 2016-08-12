@@ -1,17 +1,13 @@
-Java单元测试学习笔记
-============
+# Java单元测试学习笔记
 
-Java单元测试学习笔记.
+## 介绍
 
-* [单元测试](introduction/index.md)
-* [junit](junit/index.md)
-* [mockito](mockito/index.md)
-	* [mockito资料](mockito/information.md)
-	* [Javadoc兼官方文档](mockito/javadoc/javadoc.md)
-* [assert4j](assert4j/index.md)
+单元测试是日常开发中比不可少的一个重要环节。
 
+这份Java单元测试学习笔记, 记录在Java日常开发中做单元测试的基本知识和常用技巧.
 
-内容陆续添加中......
+## 导航
 
+如果看到的是github的源代码, 请点击下面的链接:
 
-
+[Java单元测试学习笔记@gitbook](https://skyao.gitbooks.io/leaning-java-unit-test/)
