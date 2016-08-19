@@ -4,7 +4,7 @@ bui# Summary
 * [Junit4](junit/index.md)
 * [Mockito](mockito/index.md)
 	* [Mockito资料](mockito/information.md)
-	* [Javadoc兼官方文档](mockito/javadoc/javadoc.md)
+	* [Javadoc兼官方文档(翻译)](mockito/javadoc/javadoc.md)
 		* [Mockito 1-9节](mockito/javadoc/mockito1-9.md)
 		* [Mockito 10-19节](mockito/javadoc/mockito10-19.md)
 		* [Mockito 20-29节](mockito/javadoc/mockito20-29.md)
