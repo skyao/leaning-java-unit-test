@@ -25,9 +25,17 @@
   },
   "plugins": [
     "toggle-chapters",
-    "Splitter"
+    "Splitter",
+    "donate"
   ],
   "pluginsConfig": {
-
+    "donate": {
+      "wechat": "/junit/base/img/junit-logo.png",
+      "alipay": "/junit/base/img/junit-logo.png",
+      "title": "",
+      "button": "赏",
+      "alipayText": "支付宝打赏",
+      "wechatText": "微信打赏"
+    }
   }
 }
