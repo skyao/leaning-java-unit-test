@@ -28,8 +28,7 @@
     "toggle-chapters",
     "splitter",
     "toc",
-    "emphasize",
-    "search-pro"
+    "emphasize"
   ],
   "pluginsConfig": {
     "donate": {
