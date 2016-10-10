@@ -24,9 +24,9 @@
   "variables": {
   },
   "plugins": [
+    "donate",
     "toggle-chapters",
-    "Splitter",
-    "donate"
+    "Splitter"
   ],
   "pluginsConfig": {
     "donate": {
