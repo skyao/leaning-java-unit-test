@@ -45,9 +45,9 @@
         "addClass": true,
         "className": "toc"
     },
-     "search-pro": {
+    "search-pro": {
         "cutWordLib": "nodejieba",
-        "defineWord" : ["小需求","基础建设"]
-      }
+        "defineWord" : ["单元测试","Junit"]
+    }
   }
 }
