@@ -28,7 +28,8 @@
     "toggle-chapters",
     "splitter",
     "toc",
-    "emphasize"
+    "emphasize",
+    "tbfed-pagefooter"
   ],
   "pluginsConfig": {
     "donate": {
