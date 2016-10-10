@@ -29,7 +29,6 @@
     "splitter",
     "toc",
     "emphasize",
-    "-search",
     "search-pro"
   ],
   "pluginsConfig": {
