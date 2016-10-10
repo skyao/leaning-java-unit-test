@@ -24,13 +24,13 @@
   "variables": {
   },
   "plugins": [
+    "-search",
+    "search-pro"
     "donate",
     "toggle-chapters",
     "splitter",
     "toc",
-    "emphasize",
-    "-search",
-    "search-pro"
+    "emphasize"
   ],
   "pluginsConfig": {
     "donate": {
