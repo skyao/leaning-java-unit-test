@@ -34,7 +34,7 @@
   "pluginsConfig": {
     "donate": {
       "wechat": "https://muf.gitbooks.io/java/content/img/wechat.png",
-      "alipay": "https://muf.gitbooks.io/java/content/img/wechat.png",
+      "alipay": "https://muf.gitbooks.io/java/content/img/alipay.png",
       "title": "",
       "button": "赏",
       "alipayText": "支付宝打赏",
