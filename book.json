@@ -24,9 +24,10 @@
   "variables": {
   },
   "plugins": [
-    "toggle-chapters"
+    "toggle-chapters",
+    "Splitter"
   ],
   "pluginsConfig": {
-    
+
   }
 }
