@@ -14,7 +14,8 @@ public void empty() {
      new ArrayList<Object>().get(0);
 }
 ```
-==expected==参数应该需要小心使用,上述代码只要有任何地方抛出IndexOutOfBoundsException就会通过测试,
+
+**expected**参数应该需要小心使用,上述代码只要有任何地方抛出IndexOutOfBoundsException就会通过测试,
 
 
 ####try/cach 语法

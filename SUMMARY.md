@@ -5,7 +5,7 @@ bui# Summary
     * [Suites](junit/base/suites.md)
     * [Execution Order](junit/base/test_execution_order.md)
     * [Exception](junit/base/exception_test.md)
-    * [IGnoring](junit/base/ignoring_test.md)
+    * [Ignoring](junit/base/ignoring_test.md)
     * [Timeout](junit/base/timeout_test.md)
     * [Assume](junit/base/assume.md)
     * [参数化测试](junit/base/parameter_test.md)

@@ -20,7 +20,67 @@
     "pageNumbers": false,
     "paperSize": "a4"
   },
-  "plugins": [],
+     "plugins": [
+        "disqus",
+        "-search",
+        "search-pro@1.0.7",
+        "advanced-emoji@0.1.5",
+        "github",
+        "ace",
+        "emphasize",
+        "katex",
+        "anchors",
+        "include-codeblock",
+        "mermaid",
+        "tbfed-pagefooter",
+        "sectionx",
+        "expandable-chapters",
+        "codeblock-filename",
+        "baidu",
+        "sitemap@1.0.2",
+        "donate",
+        "local-video",
+        "toc",
+        "edit-link"
+
+    ],
+    "pluginsConfig": {
+        "disqus": {
+            "shortName": "gitbookuse"
+        },
+        "github": {
+            "url": "https://github.com/zhangjikai/gitbook-use"
+        },
+        "search-pro": {
+            "cutWordLib": "nodejieba",
+            "defineWord": ["gitbook-use"]
+         },
+
+        "sharing": {
+            "weibo": true,
+            "facebook": true,
+            "twitter": true,
+            "google": false,
+            "instapaper": false,
+             "vk": false,
+            "all": [
+                "facebook", "google", "twitter",
+                "weibo", "instapaper"
+            ]
+        },
+
+        "tbfed-pagefooter": {
+            "copyright":"Copyright &copy zhangjikai.com 2015",
+            "modify_label": "该文件修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+
+        "baidu": {
+            "token" : "ff100361cdce95dd4c8fb96b4009f7bc"
+        },
+        "sitemap": {
+            "hostname": "http://gitbook.zhangjikai.com"
+        },
   "title": "Java单元测试学习笔记",
   "variables": {
   }
