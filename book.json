@@ -24,11 +24,13 @@
   "variables": {
   },
   "plugins": [
-    "donate",
-    "toggle-chapters",
-    "splitter",
-    "toc",
-    "emphasize"
+    "donate",//打赏
+    "toggle-chapters",//目录折叠
+    "splitter",//目录栏自由控制
+    "toc",//自动生成目录
+    "emphasize",//给字体加底色
+    "-search",
+    "search-pro"//支持中文搜索
   ],
   "pluginsConfig": {
     "donate": {
@@ -42,6 +44,10 @@
     "toc": {
         "addClass": true,
         "className": "toc"
+    },
+    "search-pro": {
+        "cutWordLib": "nodejieba",
+        "defineWord" : ["Gitbook Use"]
     }
   }
 }
