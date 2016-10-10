@@ -27,7 +27,8 @@
     "donate",
     "toggle-chapters",
     "splitter",
-    "toc"
+    "toc",
+    "emphasize"
   ],
   "pluginsConfig": {
     "donate": {
