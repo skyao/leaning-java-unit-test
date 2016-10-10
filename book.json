@@ -46,7 +46,7 @@
         "className": "toc"
     },
     "search-pro": {
-        "cutWordLib": "nodejieba",
+        "cutWordLib": "nodejieba"
     }
   }
 }
