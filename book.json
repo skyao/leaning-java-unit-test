@@ -24,7 +24,7 @@
   "variables": {
   },
   "plugins": [
-    "donate",/*打赏
+    "donate",/*打赏*/
     "toggle-chapters",/*目录折叠*/
     "splitter",/*目录栏自由控制*/
     "toc",/*自动生成目录*/
