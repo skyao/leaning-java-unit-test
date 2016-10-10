@@ -44,6 +44,10 @@
     "toc": {
       "addClass": true,
       "className": "toc"
+    },
+    "search-pro": {
+        "cutWordLib": "nodejieba",
+        "defineWord" : ["Gitbook Use"]
     }
   }
 }
