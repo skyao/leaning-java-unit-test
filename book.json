@@ -26,7 +26,8 @@
   "plugins": [
     "donate",
     "toggle-chapters",
-    "splitter"
+    "splitter",
+    "toc"
   ],
   "pluginsConfig": {
     "donate": {
@@ -36,6 +37,10 @@
       "button": "赏",
       "alipayText": "支付宝打赏",
       "wechatText": "微信打赏"
+    },
+    "toc": {
+        "addClass": true,
+        "className": "toc"
     }
   }
 }
