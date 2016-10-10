@@ -1,47 +1,47 @@
 {
-  "author": "Sky Ao <aoxiaojian@gmail.cn>",
-  "description": "Java单元测试学习笔记, 记录在Java中单元测试的学习过程和日常使用",
-  "extension": null,
-  "generator": "site",
-  "sidebar": {
-    "Sky@gitbook": "https://skyao.gitbooks.io"
-  },
-  "output": null,
-  "pdf": {
-    "fontSize": 12,
-    "footerTemplate": null,
-    "headerTemplate": null,
-    "margin": {
-      "bottom": 36,
-      "left": 62,
-      "right": 62,
-      "top": 36
+    "plugins": [
+        "donate",
+        "toggle-chapters",
+        "splitter",
+        "toc",
+        "emphasize",
+        "search-pro"
+    ],
+    "output": null,
+    "pluginsConfig": {
+        "donate": {
+            "wechat": "/junit/base/img/junit-logo.png",
+            "alipay": "/junit/base/img/junit-logo.png",
+            "title": "",
+            "button": "赏",
+            "alipayText": "支付宝打赏",
+            "wechatText": "微信打赏"
+        },
+        "toc": {
+            "addClass": true,
+            "className": "toc"
+        }
     },
-    "pageNumbers": false,
-    "paperSize": "a4"
-  },
-  "title": "Java测试学习笔记",
-  "variables": {
-  },
-  "plugins": [
-    "donate",
-    "toggle-chapters",
-    "splitter",
-    "toc",
-    "emphasize"
-  ],
-  "pluginsConfig": {
-    "donate": {
-      "wechat": "/junit/base/img/junit-logo.png",
-      "alipay": "/junit/base/img/junit-logo.png",
-      "title": "",
-      "button": "赏",
-      "alipayText": "支付宝打赏",
-      "wechatText": "微信打赏"
+    "author": "Sky Ao <aoxiaojian@gmail.cn>",
+    "pdf": {
+        "fontSize": 12,
+        "footerTemplate": null,
+        "headerTemplate": null,
+        "margin": {
+            "bottom": 36,
+            "left": 62,
+            "right": 62,
+            "top": 36
+        },
+        "pageNumbers": false,
+        "paperSize": "a4"
     },
-    "toc": {
-        "addClass": true,
-        "className": "toc"
-    }
-  }
+    "generator": "site",
+    "variables": {},
+    "title": "Java测试学习笔记",
+    "sidebar": {
+        "Sky@gitbook": "https://skyao.gitbooks.io"
+    },
+    "description": "Java单元测试学习笔记, 记录在Java中单元测试的学习过程和日常使用",
+    "extension": null
 }
