@@ -24,7 +24,22 @@
   "variables": {
   },
   "plugins": [
-    "splitter"
+    "splitter",
+    "-search",
+    "search-pro",
+    "disqus",
+    "advanced-emoji",
+    "toggle-chapters"
   ],
-  "pluginsConfig": {}
+  "pluginsConfig": {
+    "search-pro": {
+      "cutWordLib": "nodejieba",
+      "defineWord": [
+        "Gitbook Use"
+      ]
+    },
+    "disqus": {
+      "shortName": "gitbookuse"
+    }
+  }
 }
