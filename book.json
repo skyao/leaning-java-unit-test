@@ -24,8 +24,6 @@
   "variables": {
   },
   "plugins": [
-    "-search",
-    "search-pro"
     "donate",
     "toggle-chapters",
     "splitter",
@@ -45,9 +43,6 @@
       "addClass": true,
       "className": "toc"
     },
-    "search-pro": {
-        "cutWordLib": "nodejieba",
-        "defineWord" : ["Gitbook Use"]
-    }
+   
   }
 }
