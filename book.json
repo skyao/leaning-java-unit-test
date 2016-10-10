@@ -25,7 +25,6 @@
   },
   "plugins": [
     "donate",
-    "toggle-chapters",
     "Splitter"
   ],
   "pluginsConfig": {
