@@ -28,7 +28,9 @@
     "toggle-chapters",
     "splitter",
     "toc",
-    "emphasize"
+    "emphasize",
+    "-search",
+    "search-pro"
   ],
   "pluginsConfig": {
     "donate": {
