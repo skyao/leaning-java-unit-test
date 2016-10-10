@@ -24,13 +24,13 @@
   "variables": {
   },
   "plugins": [
-    "donate",/*打赏*/
-    "toggle-chapters",/*目录折叠*/
-    "splitter",/*目录栏自由控制*/
-    "toc",/*自动生成目录*/
-    "emphasize",/*给字体加底色*/
+    "donate",
+    "toggle-chapters",
+    "splitter",
+    "toc",
+    "emphasize",
     "-search",
-    "search-pro"/*支持中文搜索*/
+    "search-pro"
   ],
   "pluginsConfig": {
     "donate": {
