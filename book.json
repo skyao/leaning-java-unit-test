@@ -46,6 +46,6 @@
         "className": "toc"
     },
     "cutWordLib": "nodejieba",
-    "defineWord" : ["小需求","基础建设"]
+    "defineWord" : ["junit","java"]
   }
 }
