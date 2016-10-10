@@ -28,9 +28,7 @@
     "toggle-chapters",
     "splitter",
     "toc",
-    "emphasize",
-    "-search",
-    "search-pro"
+    "emphasize"
   ],
   "pluginsConfig": {
     "donate": {
@@ -45,9 +43,5 @@
         "addClass": true,
         "className": "toc"
     },
-    "search-pro": {
-        "cutWordLib": "nodejieba",
-        "defineWord" : ["单元测试","Junit"]
-    }
   }
 }
