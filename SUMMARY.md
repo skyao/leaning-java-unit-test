@@ -66,6 +66,18 @@ bui# Summary
     	* [Maven插件](assertj/extending_assertJ/maven_configure.md)
 	* [Guava](assertj/guava.md)
 	* [Joda-Time](assertj/joda_time.md)
+* [H2介绍](h2/introduction/h2.md)
+* [H2特性(官网文档翻译)](h2/feature/feature_list.md)
+	* [连接模式](h2/feature/connection_modes.md)
+	* [数据库特性和URL](h2/feature/database_url.md)
+		* [运行模式](h2/feature/run_mode.md)
+		* [数据库设置](h2/feature/database_settings.md)
+		* [数据库文件设置](h2/feature/database_file_settings.md)
+		* [数据库连接设置](h2/feature/database_connection_settings.md)
+* [H2在测试中的使用](h2/test/usage_in_test.md)
+	* [Demo](h2/test/demo.md)
+	* [纯JDBC](h2/test/pure_jdbc.md)
+	* [OpenJPA](h2/test/openjpa.md)
 
 
 
