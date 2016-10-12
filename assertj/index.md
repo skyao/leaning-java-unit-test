@@ -24,7 +24,7 @@ testCompile 'org.assertj:assertj-core:3.5.2'
 ```
 
 ###资料收集
-[官网地址](http://joel-costigliola.github.io/)
+[官网地址](http://joel-costigliola.github.io/assertj/index.html)
 
 [代码仓库](https://github.com/joel-costigliola/assertj)
 

@@ -63,6 +63,8 @@ bui# Summary
 	* [java8特性的断言](assertj/core_features/jdk_8_assertions.md)
 	* [拓展assertj](assertj/extending_assertJ/index.xml)
 		* [Condition](assertj/extending_assertJ/condition.md)
+	* [Guava](assertj/guava.md)
+	* [Joda-Time](assertj/joda_time.md)
 
 
 
