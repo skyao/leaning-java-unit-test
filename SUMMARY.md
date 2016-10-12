@@ -1,6 +1,5 @@
 bui# Summary
 
-* [介绍](introduction/index.md)
 * [Junit4](junit/base/index.md)
     * [Suites](junit/base/suites.md)
     * [Execution Order](junit/base/test_execution_order.md)
