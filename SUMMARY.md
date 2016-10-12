@@ -87,7 +87,7 @@ bui# Summary
     * [最佳实践](dbunit/best_practices/index.md)
     * [DatabaseOperation](dbunit/databaseOperation.md)
     * [ReplacementDataSet](dbunit/ReplacementDataSet.md)
-* [Cucumber介绍](introduction/index.md)
+* [Cucumber](introduction/index.md)
 	* [我们的目标](introduction/target.md)
     * [资料收集整理](introduction/information.md)
     * [安装](installation/index.md)
