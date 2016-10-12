@@ -1,6 +1,6 @@
 Cucumber介绍
 ===========
-
+![](../../img/cucumber.png)
 ## 介绍
 
 BDD 就是 Behavior Driven Development / 行为驱动开发，是一种软件开发流程。
