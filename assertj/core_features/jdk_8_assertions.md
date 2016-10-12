@@ -3,7 +3,6 @@ Java8断言
 由于内容较多这里只列举了2.5.x版本新增的特性.你可以在[这里](http://joel-costigliola.github.io/assertj/assertj-core-news.html#assertj-core-3.4.0)查看更多更早版本的内容
 
 ####新增Predicate断言
-<!-- toc -->
 jdk中的Predicate接口是一个标准接口，应用程序可以实现它来定义希望应用于 FilteredRowSet 对象的过滤器
 
 下面这些Predicate断言可用
