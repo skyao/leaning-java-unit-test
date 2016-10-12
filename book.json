@@ -1,10 +1,11 @@
 {
   "author": "Sky Ao <aoxiaojian@gmail.cn>",
-  "description": "Java单元测试学习笔记, 记录在Java中单元测试的学习过程和日常使用",
+  "author": "herryZ <zsh989163@163.com>",
+  "description": "java测试是一个庞大的体系,这里整理了TDD,BDD所需要的一些工具，框架(JUnit4,Assertj,Mockito,PowerMock,h2,DbUnit,Cucumber等)",
   "extension": null,
   "generator": "site",
   "sidebar": {
-    "Sky@gitbook": "https://skyao.gitbooks.io"
+    "herryZ@gitbook": "https://henryZ.gitbooks.io"
   },
   "output": null,
   "pdf": {
@@ -45,7 +46,7 @@
       "className": "toc"
     },
     "tbfed-pagefooter": {
-      "copyright":"Copyright &copy www.gitbook.com/@muf 2016",
+      "copyright":"Copyright &copy www.gitbook.com/@herryZ 2016",
       "modify_label": "该文件修订时间：",
       "modify_format": "YYYY-MM-DD HH:mm:ss"
     }
