@@ -66,7 +66,7 @@ bui# Summary
     	* [Maven插件](assertj/extending_assertJ/maven_configure.md)
 	* [Guava](assertj/guava.md)
 	* [Joda-Time](assertj/joda_time.md)
-* [H2介绍](h2/introduction/h2.md)
+* [H2](h2/introduction/h2.md)
     * [H2特性(官网文档翻译)](h2/feature/feature_list.md)
         * [连接模式](h2/feature/connection_modes.md)
         * [数据库特性和URL](h2/feature/database_url.md)
@@ -78,6 +78,15 @@ bui# Summary
         * [Demo](h2/test/demo.md)
         * [纯JDBC](h2/test/pure_jdbc.md)
         * [OpenJPA](h2/test/openjpa.md)
+* [DbUnit](dbunit/index.md)
+    * [快速入门](dbunit/getting-started.md)
+        * [DbtestClass](dbunit/getting-started/dbtestClass.md)
+        * [DbtestClass SubClass](dbunit/getting-started/dbtestcase_subclass.md)
+        * [非继承实现方式](dbunit/getting-started/no_parent.md)
+        * [数据库数据验证](dbunit/getting-started/data_verification.md)
+    * [最佳实践](dbunit/best_practices/index.md)
+    * [DatabaseOperation](dbunit/databaseOperation.md)
+    * [ReplacementDataSet](dbunit/ReplacementDataSet.md)
 
 
 
