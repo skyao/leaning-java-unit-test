@@ -4,7 +4,7 @@ Java8　断言
 
 <!-- toc -->
 ####新增Predicate断言
->jdk中的Predicate接口是一个标准接口，应用程序可以实现它来定义希望应用于 FilteredRowSet 对象的过滤器
+jdk中的Predicate接口是一个标准接口，应用程序可以实现它来定义希望应用于 FilteredRowSet 对象的过滤器
 
 下面这些Predicate断言可用
 - accepts(T... values) : 如果所有给定的值匹配Predicate则表示成功.
