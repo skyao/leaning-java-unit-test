@@ -61,7 +61,7 @@ bui# Summary
 * [Assertj](assertj/index.md)
 	* [核心功能](assertj/core_features/basic.md)
 	* [java8特性的断言](assertj/core_features/jdk_8_assertions.md)
-	* [拓展Assertj](assertj/extending_assertJ/index.xml)
+	* [拓展Assertj](assertj/extending_assertJ/index.md)
     	* [Condition](assertj/extending_assertJ/condition.md)
     	* [Maven插件](assertj/extending_assertJ/maven_configure.md)
 	* [Guava](assertj/guava.md)
