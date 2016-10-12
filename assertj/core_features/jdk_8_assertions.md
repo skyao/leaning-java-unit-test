@@ -1,6 +1,6 @@
 Java8　断言
 ======
->由于内容较多这里只列举了2.5.x版本新增的特性.你可以在[这里](http://joel-costigliola.github.io/assertj/assertj-core-news.html#assertj-core-3.4.0)查看更多更早版本的内容
+由于内容较多这里只列举了2.5.x版本新增的特性.你可以在[这里](http://joel-costigliola.github.io/assertj/assertj-core-news.html#assertj-core-3.4.0)查看更多更早版本的内容
 
 <!-- toc -->
 ####新增Predicate断言
