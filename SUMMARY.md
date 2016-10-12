@@ -58,7 +58,11 @@ bui# Summary
 	* [使用案例](powermock/example/index.md)
 		* [模拟 final 类和方法](powermock/example/final_class.md)
 		* [模拟 private 方法](powermock/example/private_method.md)
-* [Assert4j](assert4j/index.md)
+* [Assertj](assertj/index.md)
+	* [核心功能](assertj/core_features/base.md)
+	* [java8特性的断言](assertj/core_features/jdk_8_assertions.md)
+	* [拓展assertj](assertj/extending_assertJ/index.xml)
+		* [Condition](assertj/extending_assertJ/condition.md)
 
 
 
