@@ -87,6 +87,20 @@ bui# Summary
     * [最佳实践](dbunit/best_practices/index.md)
     * [DatabaseOperation](dbunit/databaseOperation.md)
     * [ReplacementDataSet](dbunit/ReplacementDataSet.md)
+* [Cucumber介绍](introduction/index.md)
+	* [我们的目标](introduction/target.md)
+    * [资料收集整理](introduction/information.md)
+    * [安装](installation/index.md)
+        * [JDK8下的问题](installation/java8.md)
+        * [IntelliJ idea](installation/idea.md)
+    * [参考文档(翻译)](reference/index.md)
+    * [集成](integration/index.md)
+        * [spring集成](integration/spring/spring.md)
+            * [类SpringFactory的使用](integration/spring/class_SpringFactory.md)
+        * [testng集成](integration/testng/testng.md)
+    * [实践](practice/index.md)
+        * [使用中文](practice/chinese.md)
+        * [传递参数](practice/pass_parameters.md)
 
 
 
