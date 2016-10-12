@@ -1,0 +1,57 @@
+Cucumber+JUnit+Spring Boot+DbUnit集成
+------
+##Maven依赖
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+    <version>1.4.0.RELEASE</version>
+</dependency>
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-tx</artifactId>
+    <version>4.3.2.RELEASE</version>
+</dependency>
+<dependency>
+    <groupId>org.postgresql</groupId>
+    <artifactId>postgresql</artifactId>
+    <version>9.4.1208.jre7</version>
+</dependency>
+
+<!--test-->
+<dependency>
+    <groupId>org.dbunit</groupId>
+    <artifactId>dbunit</artifactId>
+    <version>${dbunit-version}</version>
+    <version>2.5.3</version>
+    <scope>test</scope>
+</dependency>
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-test</artifactId>
+    <version>1.4.0.RELEASE</version>
+    <scope>test</scope>
+</dependency>
+
+<!--cucumber-->
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-spring</artifactId>
+    <version>1.2.4</version>
+    <scope>test</scope>
+</dependency>
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-java8</artifactId>
+    <version>1.2.4</version>
+    <scope>test</scope>
+</dependency>
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-junit</artifactId>
+    <version>1.2.4</version>
+    <scope>test</scope>
+</dependency>
+```
+
+后续会为大家准备一个开源的例子,请期待
