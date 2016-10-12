@@ -52,6 +52,13 @@ Cucumber+JUnit+Spring Boot+DbUnit集成
     <version>1.2.4</version>
     <scope>test</scope>
 </dependency>
+
+<dependency>
+    <groupId>org.assertj</groupId>
+    <artifactId>assertj-core</artifactId>
+    <scope>test</scope>
+    <version>3.5.2</version>
+</dependency>
 ```
 
 后续会为大家准备一个开源的例子,请期待
