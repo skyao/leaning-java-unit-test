@@ -5,7 +5,7 @@ AssertJ-DB特性
 
 <!-- toc -->
 ####Navigation
-######Table或者Request作为根断言
+#####Table或者Request作为根断言
 assertThat(...)方法表示一个table或一个request开始的断言
 从table或者request开始基本都是以下面这种方式调用:
 ```java
@@ -118,3 +118,47 @@ assertThat(tableOrRequest).row().value()...
 //第二个value
 assertThat(tableOrRequest).column().value().value()...
 ```
+
+```java
+//第三个value
+assertThat(tableOrRequest).column().value(2)...
+//第七个
+assertThat(tableOrRequest).row(4).value(2).value(6)...
+//第４个value
+assertThat(tableOrRequest).column(4).value(2).value()...
+//第5个
+assertThat(tableOrRequest).column().value(3).row(2).column(0).value()...
+```
+
+```java
+//为name的value
+assertThat(tableOrRequest).row().value("name")...
+//为id的value
+assertThat(tableOrRequest).row().value("surname").value().value(6).value("id")...
+```
+下图红色部分表示哪些点开始可以调用到value:
+
+![](img/20.png)
+
+```java
+assertThat(table).column().value().returnToColumn()...
+
+assertThat(request).row().value().returnToRow()...
+```
+下面二者相等:
+```java
+assertThat(table).column().value().returnToColumn().value()...
+
+assertThat(table).column().value().value()...
+```
+
+#####Changes作为根断言
+######to Change
+```java
+//导航到创建
+assertThat(changes).ofCreation()...
+```
+
+- 由于后续内容都比较简单,相信大家看到这里也应该明白它的大概用法了,若有兴趣可以请查看[原文](http://joel-costigliola.github.io/assertj/assertj-db-features-highlight.html)
+- [这里](https://github.com/joel-costigliola/assertj-examples/tree/master/assertions-examples/src/test/java/org/assertj/examples/db)是使用案例,大家过一遍结合文章运用起来问题不大
+
