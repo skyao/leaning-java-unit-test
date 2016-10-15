@@ -17,5 +17,15 @@ JUnitParams添加了一个新的JUunit的runner，提供了写起来更容易,�
 - 你可以在你的IDE中看到明确的参数(在JUnit的Parametrised中只可以看到参数的序号)
 
 
+##maven依赖
+```xml
+<dependency>
+  <groupId>pl.pragmatists</groupId>
+  <artifactId>JUnitParams</artifactId>
+  <version>1.0.5</version>
+  <scope>test</scope>
+</dependency>
+```
+
 ##Quickstart
-请查看下一篇章,[快速开始](/quickstart.md)
+请查看下一篇章,[快速开始](quickstart.md)

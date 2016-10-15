@@ -2,15 +2,6 @@ Quickstart
 ------
 如果你只是想看JUnitParams的一些简单使用和主要用法,你可以查看[这里](https://github.com/Pragmatists/JUnitParams/blob/master/src/test/java/junitparams/usage/SamplesOfUsageTest.java)(建议动手开发之前阅读一遍)
 
-1. 添加maven依赖
-```xml
-    <dependency>
-        <groupId>pl.pragmatists</groupId>
-        <artifactId>JUnitParams</artifactId>
-        <version>1.0.5</version>
-        <scope>test</scope>
-    </dependency>
-```
 
 1. 如何使用? 比如说有一个Person类:
 ```java
@@ -61,7 +52,7 @@ Quickstart
                 };
     }
 ```
-如果你的测试方法名不长,你可以忽略@Parameters注解中的mothod参数,只需要将提供值的方法的名称跟你的测试方法名类似（测试方法名和作为前缀的parametersFor），如下:
+如果你的测试方法名不长,你可以忽略@Parameters注解中的method参数,只需要将提供值的方法的名称跟你的测试方法名类似（以parametersFor开头+测试方法名），如下:
 ```java
     @Test
     @Parameters

@@ -147,6 +147,7 @@ public class FibonacciTest3 {
 
 ```
 加名称之前在idea中运行的效果![](img/parameter_before.png)
+
 加名称之后在idea中的运行效果![](img/parameter_after.png)
 
 在上面给出的例子中，参数化转轮创建像名称[1：FIB（3）= 2]。如果没有指定名称，当前的参数指标将被默认使用。
