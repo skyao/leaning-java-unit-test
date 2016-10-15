@@ -1,6 +1,6 @@
 ParallelParameterized
 ------
-用多个工作线程同时允许所有的@Test方法并分配参数,继承并拓展了JUnit的Parameterized，默认情况下测试的最大线程数将是可利用的处理器的数目。
+用多个工作线程同时允许所有的@Test方法并分配参数,继承并拓展了JUnit的Parameterized，默认情况下测试的最大线程数将是可利用的处理器的数量。
 
 
 ```java

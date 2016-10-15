@@ -1,6 +1,6 @@
 MultithreadingTester
 ------
-1. 如果你想同时在多线程中运行一个或多个[RunnableAsserts](https://michaeltamm.github.io/junit-toolbox/com/googlecode/junittoolbox/RunnableAssert.html)。应该这样做:ew MultithreadingTester().add(...).run();例如:
+1. 如果你想同时在多线程中运行一个或多个[RunnableAsserts](https://michaeltamm.github.io/junit-toolbox/com/googlecode/junittoolbox/RunnableAssert.html)。应该这样做:new MultithreadingTester().add(...).run();例如:
 ```java
     @Test(timeout = 5000)
     public void test() {

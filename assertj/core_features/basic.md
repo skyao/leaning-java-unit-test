@@ -283,9 +283,9 @@ public void iterable_assertions_on_extracted_method_result_example() {
 }
 ```
 
-##用soft断言手机所有错误
-使用soft断言,assertj会收集所有的断言错误,而不是在第一个断言错误就停止了
-如果你使用的是标准的普通的断言,那么你会在第一个错误就停止后续断言,例如:
+##用soft断言收集所有错误
+一般情况下在你的断言中如果有一个断言错误,那么整个测试就会停止,使用soft断言会运行完你的所有断言之后才停止运行,并且收集你的错误信息
+如果你使用的是标准的普通的断言,例如:
 ```java
 @Test
 public void host_dinner_party_where_nobody_dies() {
@@ -353,7 +353,7 @@ public void host_dinner_party_where_nobody_dies() {
    // 这里就不需要再写softly.assertAll()了
 }
 ```
-这里只能用于junit,testNG没办法做全局搜集信息,因为testNG只要抛出一个异常就会跳过后面的测试
+这里只能用于junit,testNG没办法做全局收集信息,因为testNG只要抛出一个异常就会跳过后面的测试
 
 ##用字符串断言,断言文件内容
 ```java
@@ -367,7 +367,7 @@ assertThat(Assertions.contentOf(xFile)).startsWith("The Truth").contains("Is Out
 
 ##异常断言
 如何断言异常被抛出，并检查它是你所预期的？
-在java8中测试断言是非常优雅的,使用assertThartThrownBy(ThrowingCallable)来捕获异常,然后断言Throwable.ThrowingCallable是一个功能接口,可以通过lambda来调用
+在java8中测试断言是非常优雅的,使用assertThartThrownBy(ThrowingCallable)来捕获异常,断言Throwable.ThrowingCallable是一个功能接口,可以通过lambda来调用
 例如:
 ```java
 @Test

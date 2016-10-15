@@ -1,6 +1,6 @@
 自定义规则
 -------
-大多数自定义规则可被实现为在ExternalResource规则的延伸,一般情况下你需要实现TestRule接口:
+大多数自定义规则都是ExternalResource规则的延伸,一般情况下你需要实现TestRule接口:
 
 实现TestRule需要自定义一个构造方法,添加的方法用于测试,并且提供一个新的Statement。比如说有一下需求:为每个测试记录日志
 ```java

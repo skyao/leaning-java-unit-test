@@ -1,6 +1,6 @@
 ClassRule
 ------
-ClassRule扩展了方法级别的规则,添加了可以影响类的操作的静态属性。任何ParentRunner的子类,包括标准BlockJUnit4ClassRunner和Suite类,都支持ClassRule。
+ClassRule扩展了方法级别的规则,添加了可以影响类的运行的的静态属性。任何ParentRunner的子类,包括标准BlockJUnit4ClassRunner和Suite类,都支持ClassRule。
 ```java
     package com.junit.learning.rules;
 

@@ -1,6 +1,6 @@
 AssertJ-DB
 ======
-![](../img/assertj-db_icon.png)
+![](../../img/assertj-db_icon.png)
 
 ####介绍
 AssertJ-DB提供了对数据库中数据的断言。它需要Java 7或更高版本，可与JUnit的或TestNG的使用
